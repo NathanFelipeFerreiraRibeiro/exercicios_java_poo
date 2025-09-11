@@ -1,4 +1,4 @@
-package ex01;
+package exemplo_classe;
 public class Caneta {
     String modelo;
     String cor;

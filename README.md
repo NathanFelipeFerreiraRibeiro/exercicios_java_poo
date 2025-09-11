@@ -1,113 +1,121 @@
-# Lista de 100 Exercícios de Orientação a Objetos
+# 📘 Lista de 100 Exercícios Práticos de Orientação a Objetos
 
-# Parte 1 – Fundamentos (1–20)
+Esta lista contém 100 exercícios **práticos** de Programação Orientada a Objetos, organizados por dificuldade crescente.
 
-- 1 Defina o que é classe e objeto com exemplos em pseudocódigo.
-- 2 Crie uma classe Carro com atributos básicos (marca, modelo, ano).
-- 3 Instancie três objetos da classe Carro e exiba seus atributos.
-- 4 Diferencie atributos de instância e de classe com exemplos.
-- 5 Crie uma classe Pessoa com atributos nome e idade, e um método apresentar().
-- 6 Explique a diferença entre atributo e método.
-- 7 Escreva um construtor para a classe Pessoa.
-- 8 Crie uma classe ContaBancaria com métodos depositar() e sacar().
-- 9 Defina encapsulamento. Crie atributos privados em ContaBancaria.
-- 10 Implemente métodos getters e setters em ContaBancaria.
-- 11 Explique o conceito de abstração em OO.
-- 12 Modele uma classe Livro com atributos e um método exibirInformacoes().
-- 13 Faça uma classe Retângulo com métodos calcularArea() e calcularPerimetro().
-- 14 Crie uma classe Círculo que calcule área e circunferência.
-- 15 Modele a classe Aluno com atributos e um método para calcular média.
-- 16 Explique a diferença entre classe e objeto usando Aluno como exemplo.
-- 17 Mostre como declarar constantes dentro de uma classe.
-- 18 Crie uma classe Produto com desconto aplicado no preço.
-- 19 Modele uma classe Funcionario com salário e um método aumentarSalario().
-- 20 Explique a diferença entre classe concreta e classe abstrata.
+---
 
+## Parte 1 – Fundamentos (1–20)
+1. Crie uma classe `Carro` com atributos básicos e exiba seus valores.
+2. Crie uma classe `Pessoa` com construtor e método `apresentar()`.
+3. Modele uma classe `Produto` que calcule preço final com desconto.
+4. Crie uma classe `Aluno` que calcule média de 3 notas.
+5. Modele uma classe `Livro` que exiba título e autor.
+6. Crie uma classe `Retangulo` com métodos `calcularArea()` e `calcularPerimetro()`.
+7. Modele uma classe `Circulo` que calcule área e circunferência.
+8. Crie uma classe `ContaBancaria` com métodos `depositar()` e `sacar()`.
+9. Adicione verificação de saldo negativo na `ContaBancaria`.
+10. Crie uma classe `Funcionario` com método para calcular salário com bônus.
+11. Modele uma classe `Agenda` que armazene contatos.
+12. Crie uma classe `Venda` que calcule o valor total de itens comprados.
+13. Modele uma classe `Temperatura` que converta entre Celsius e Fahrenheit.
+14. Crie uma classe `Moeda` que converta valores em dólar para real.
+15. Modele uma classe `Data` com método que formate dia/mês/ano.
+16. Crie uma classe `Endereco` e associe-a à classe `Pessoa`.
+17. Modele uma classe `Pedido` que contenha vários produtos.
+18. Crie uma classe `Cofre` que só abre com senha correta.
+19. Modele uma classe `Telefone` que valide número com 11 dígitos.
+20. Crie uma classe `Relogio` que exiba hora atual formatada.
 
-# Parte 2 – Herança e Polimorfismo (21–40)
-- 1 Crie uma classe Animal e subclasses Cachorro e Gato.
-- 2 Adicione o método emitirSom() em Animal e sobrescreva em Cachorro/Gato.
-- 3 Explique a diferença entre herança simples e herança múltipla.
-- 4 Modele uma classe abstrata Veiculo e classes filhas Carro e Moto.
-- 5 Crie uma hierarquia Funcionario → Gerente, Desenvolvedor.
-- 6 Sobrescreva o método calcularSalario() em cada tipo de funcionário.
-- 7 Explique o conceito de polimorfismo com exemplos práticos.
-- 8 Crie um método que receba um Animal e chame emitirSom().
-- 9 Modele FormaGeometrica como abstrata e implemente Quadrado e Círculo.
-- 10 Crie uma lista de FormaGeometrica e percorra exibindo áreas.
-- 11 Explique a diferença entre overloading e overriding.
-- 12 Crie um exemplo de método sobrecarregado em Calculadora.
-- 13 Explique upcasting e downcasting em OO.
-- 14 Implemente casting em uma hierarquia de classes de veículos.
-- 15 Crie uma interface Autenticavel e implemente em Usuario e Administrador.
-- 16 Explique a diferença entre interface e classe abstrata.
-- 17 Modele uma hierarquia de InstrumentoMusical com Violão, Bateria.
-- 18 Crie um polimorfismo para tocarInstrumento().
-- 19 Modele FormaPagamento (Dinheiro, Cartao, Pix) e sobrescreva pagar().
-- 20 Crie uma lista de formas de pagamento e execute o método polimórfico.
+---
 
-# Parte 3 – Encapsulamento e Boas Práticas (41–60)
+## Parte 2 – Herança e Polimorfismo (21–40)
+21. Modele `Animal` e crie `Cachorro` e `Gato` herdando dela.
+22. Adicione método `emitirSom()` em `Animal` e sobrescreva nas subclasses.
+23. Crie `Veiculo` abstrato e subclasses `Carro` e `Moto`.
+24. Crie `Funcionario` abstrato e subclasses `Gerente` e `Desenvolvedor`.
+25. Sobrescreva `calcularSalario()` em cada tipo de funcionário.
+26. Crie `FormaGeometrica` abstrata e implemente `Quadrado` e `Triangulo`.
+27. Armazene diferentes `FormaGeometrica` em uma lista e calcule áreas.
+28. Crie interface `Autenticavel` e implemente em `Usuario` e `Administrador`.
+29. Modele `InstrumentoMusical` e sobrescreva `tocar()` em `Violao` e `Bateria`.
+30. Crie `Pagamento` abstrato e subclasses `Pix`, `Cartao`, `Dinheiro`.
+31. Modele `Documento` com subclasses `Contrato` e `Relatorio`.
+32. Crie `Imposto` abstrato e subclasses `ISS` e `ICMS`.
+33. Modele `Jogo` com subclasses `Futebol` e `Basquete`.
+34. Crie `AnimalMarinho` com `Peixe` e `Golfinho`.
+35. Modele `Funcionario` com polimorfismo em `calcularBonus()`.
+36. Crie método que recebe `Animal` e chame `emitirSom()` (polimorfismo).
+37. Modele `Transporte` com subclasses `Onibus`, `Metro`, `Aviao`.
+38. Crie `Arquivo` abstrato e subclasses `Texto` e `Imagem`.
+39. Modele `Conta` com subclasses `ContaCorrente` e `ContaPoupanca`.
+40. Crie `Pessoa` e subclasses `Aluno` e `Professor` com métodos distintos.
 
-- 1 Explique a diferença entre atributos públicos, privados e protegidos.
-- 2 Refaça ContaBancaria garantindo que saldo nunca seja negativo.
-- 3 Crie exceções personalizadas para SaldoInsuficienteException.
-- 4 Modele uma classe Cofre com acesso apenas via senha.
-- 5 Explique o princípio da responsabilidade única (SRP).
-- 6 Refatore Funcionario para que só trate dados do funcionário, não da folha de pagamento.
-- 7 Crie um exemplo que viole encapsulamento e corrija.
-- 8 Modele uma classe Agenda com encapsulamento adequado.
-- 9 Explique coesão e acoplamento em OO.
-- 10 Crie um sistema de pedidos com classes Pedido, Cliente e Produto.
-- 11 Aplique encapsulamento no sistema de pedidos.
-- 12 Modele um carrinho de compras com lista de produtos encapsulada.
-- 13 Adicione um método para calcular total do carrinho.
-- 14 Implemente validação de estoque no carrinho.
-- 15 Explique o conceito de imutabilidade em objetos.
-- 16 Modele uma classe Data imutável.
-- 17 Explique o padrão POJO (Plain Old Java Object).
-- 18 Refaça Aluno como POJO.
-- 19 Explique o princípio Tell, Don’t Ask.
-- 20 Refaça ContaBancaria aplicando esse princípio.
+---
 
-# Parte 4 – Avançado e Padrões (61–100)
+## Parte 3 – Encapsulamento e Estruturas (41–60)
+41. Refaça `ContaBancaria` com atributos privados e getters/setters.
+42. Adicione exceção `SaldoInsuficienteException` ao `sacar()`.
+43. Modele `CarrinhoDeCompras` que só permite adicionar produto com estoque.
+44. Crie `Biblioteca` que armazene uma lista de `Livro`.
+45. Modele `Agenda` que não permita contatos duplicados.
+46. Crie `Cofre` que use encapsulamento para controlar senha.
+47. Modele `Banco` que contenha várias `ContaBancaria`.
+48. Crie `Empresa` que contenha lista de `Funcionario`.
+49. Modele `Turma` que contenha lista de `Aluno` e calcule média geral.
+50. Crie `Estoque` que adicione, remova e consulte `Produto`.
+51. Modele `Restaurante` que tenha lista de `Pedido`.
+52. Crie `Loja` que registre vendas e calcule faturamento.
+53. Modele `Clinica` com lista de `Paciente`.
+54. Crie `Hospital` que contenha `Medico` e `Enfermeiro`.
+55. Modele `Cinema` que gerencie `Sessao` e `Ingresso`.
+56. Crie `Time` com lista de `Jogador`.
+57. Modele `Escola` que gerencie `Professor` e `Turma`.
+58. Crie `BibliotecaDigital` que permita busca de `Livro` por título.
+59. Modele `SistemaDeNotas` que não permita média > 10.
+60. Crie `LojaVirtual` que registre pedidos com vários produtos.
 
-- 1 Explique o princípio de substituição de Liskov (LSP).
-- 2 Dê um exemplo de violação de LSP e corrija.
-- 3 Modele um sistema de notificação (Email, SMS, Push).
-- 4 Aplique o padrão Strategy para envio de notificações.
-- 5 Explique o padrão Singleton.
-- 6 Implemente Singleton para ConfigSistema.
-- 7 Explique riscos do Singleton mal utilizado.
-- 8 Modele um padrão Factory para VeiculoFactory.
-- 9 Explique o padrão Observer.
-- 10 Implemente Observer em Estoque e Cliente.
-- 11 Explique o princípio da inversão de dependência (DIP).
-- 12 Aplique DIP em um sistema de pagamento.
-- 13 Explique o padrão Adapter.
-- 14 Modele um exemplo com sistema de tomada 110V adaptado para 220V.
-- 15 Explique o padrão Decorator.
-- 16 Aplique Decorator em um sistema de Bebida com adicionais.
-- 17 Explique o padrão Composite.
-- 18 Modele Arquivo e Pasta com Composite.
-- 19 Explique o padrão Proxy.
-- 20 Crie um Proxy de acesso a um banco de dados.
-- 21 Explique o padrão Command.
-- 22 Modele comandos para LigarLuz e DesligarLuz.
-- 23 Explique o padrão Template Method.
-- 24 Modele relatórios diferentes usando Template Method.
-- 25 Explique o padrão Builder.
-- 26 Modele PedidoBuilder para montar pedidos.
-- 27 Explique o padrão Prototype.
-- 28 Implemente clonagem em Documento.
-- 29 Explique o padrão State.
-- 30 Modele uma ContaBancaria com estados (Positivo, Negativo).
-- 31 Explique o padrão Chain of Responsibility.
-- 32 Modele aprovação de despesas em diferentes níveis hierárquicos.
-- 33 Explique o princípio da segregação de interface (ISP).
-- 34 Modele interfaces menores aplicando ISP.
-- 35 Explique o conceito de DDD (Domain Driven Design).
-- 36 Modele entidades e agregados para um sistema de biblioteca.
-- 37 Explique a diferença entre entidade e valor em DDD.
-- 38 Modele um valor-objeto CPF imutável.
-- 39 Explique o padrão Repository.
-- 40 Modele ClienteRepository para persistência de clientes.
+---
+
+## Parte 4 – Avançado e Padrões (61–100)
+61. Implemente padrão **Singleton** em `ConfigSistema`.
+62. Crie padrão **Factory** para instanciar diferentes `Veiculo`.
+63. Implemente padrão **Observer** para `Estoque` notificar `Cliente`.
+64. Modele padrão **Strategy** para formas de pagamento.
+65. Crie padrão **Adapter** para tomada 110V funcionar em 220V.
+66. Implemente padrão **Decorator** em `Bebida` com adicionais.
+67. Modele padrão **Composite** para `Arquivo` e `Pasta`.
+68. Crie padrão **Proxy** que simule acesso a banco de dados.
+69. Implemente padrão **Command** para acender/apagar luz.
+70. Modele padrão **Template Method** para geração de relatórios.
+71. Crie padrão **Builder** para montar `Pedido`.
+72. Implemente padrão **Prototype** clonando objetos `Documento`.
+73. Modele padrão **State** para `ContaBancaria` (`Positiva`, `Negativa`).
+74. Crie padrão **Chain of Responsibility** para aprovação de despesas.
+75. Implemente padrão **Repository** para `Cliente`.
+76. Crie valor-objeto `CPF` imutável.
+77. Modele entidade `Livro` e valor-objeto `ISBN`.
+78. Implemente `DDD` em sistema de biblioteca (entidades e agregados).
+79. Crie `ServicoDeEmail` que use injeção de dependência.
+80. Modele `ServicoDePagamento` com interface `GatewayPagamento`.
+81. Crie `Logger` Singleton.
+82. Modele `Configuracao` carregada de arquivo usando Singleton.
+83. Implemente `ProdutoFactory` para criar produtos a partir de tipo.
+84. Modele `UsuarioFactory` para criar perfis diferentes.
+85. Crie `RelatorioTemplate` com subclasses `RelatorioPDF` e `RelatorioExcel`.
+86. Modele `NotificacaoObserver` para `Email` e `SMS`.
+87. Implemente `CarrinhoDecorator` que adiciona descontos extras.
+88. Crie `ArquivoComposite` que agrupa `Texto` e `Imagem`.
+89. Modele `ProxyImagem` que carrega apenas quando necessário.
+90. Implemente `ComandoImpressora` (`Imprimir`, `Cancelar`).
+91. Crie `PedidoBuilder` para pedidos complexos.
+92. Modele `DocumentoPrototype` que permite duplicar contratos.
+93. Crie `ContaState` com `Ativa`, `Bloqueada`, `Encerrada`.
+94. Modele cadeia de aprovação em níveis hierárquicos.
+95. Implemente `ProdutoRepository` que simula persistência.
+96. Modele `UsuarioRepository` que armazena em memória.
+97. Crie `OrdemDeServico` com padrão Builder.
+98. Modele `ChatObserver` para receber mensagens em tempo real.
+99. Implemente `PagamentoStrategy` com Pix/Cartão.
+100. Modele `SistemaDeArquivosComposite` completo com arquivos/pastas.
+
+---

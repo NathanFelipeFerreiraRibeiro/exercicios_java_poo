@@ -1,4 +1,4 @@
-package ex01;
+package exemplo_classe;
 public class ex01class {
     public static void main(String[] args) {
         Caneta c1 = new Caneta();
@@ -20,6 +20,7 @@ public class ex01class {
         c2.status();
         c2.tampar();
         c2.rabiscar();
+
     }
 
 
