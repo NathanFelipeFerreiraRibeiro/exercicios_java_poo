@@ -7,7 +7,7 @@ public class Caneta {
     private String cor;
 
     //O Metodo abaixo é o metodo construtor
-    //Lembresse sempre o metodo construtor tem sempre o mesmo nome da classe
+    //Lembresse sempre, o metodo construtor tem sempre o mesmo nome da classe
     public Caneta (String m, String c, float p) {
         setModelo(m);
         setCor(c);

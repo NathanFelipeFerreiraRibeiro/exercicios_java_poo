@@ -2,13 +2,11 @@ package ex02;
 
 public class Pessoas {
     private String nome;
-    private String cpf;
-    private int anonascimento;
+    private int idade;
 
-    public Pessoas(String nome, String cpf, int anoNascimento) {
+    public Pessoas(String nome, int idade) {
         setNome(nome);
-        setCPF(cpf);
-        setAnoNascimento(anoNascimento);
+        setIdade(idade);
     }
 
     public String getNome() {
@@ -19,25 +17,15 @@ public class Pessoas {
         this.nome = nome;
     }
 
-    public String getCPF() {
-        return this.cpf;
+    public int getIdade() {
+        return this.idade;
     }
 
-    public void setCPF(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public int getAnoNascimento() {
-        return this.anonascimento;
-    }
-
-    public void setAnoNascimento(int ano) {
-        this.anonascimento = ano;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
     public void apresentar() {
-        System.out.println("Nome: " + this.getNome());
-        System.out.println("CPF: " + this.getCPF());
-        System.out.println("Ano: " + this.getAnoNascimento());
+        System.out.println("Olá, sou " + this.getNome() + " e tenho " + this.getIdade() + " anos.");
     }
 }
